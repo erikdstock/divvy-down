@@ -18,13 +18,17 @@ function findNearby() {
 
 function showStations (position) {
 	getStations(position);
-	debugger;
+	// debugger;
 }
 
 function getStations (position) {
+	console.log('getting stations')
 	$.ajax({
-		method: "get",
+		type: "get",
+		dataType: 'jsonp',
 		url: "http://www.divvybikes.com/stations/json/"
+	}).done(function(a,b,c) {
+		debugger;
 	})
 
 }
