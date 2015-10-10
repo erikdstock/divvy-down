@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 	var stations;
 	// console.log(req);
 	// console.log(next);
-	$.get("https://www.divvybikes.com/stations/json").done(function(data){
+	app.get("https://www.divvybikes.com/stations/json").done(function(data){
 		console.log(data);
 		stations = data;
 	})

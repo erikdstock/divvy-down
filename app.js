@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var Firebase = require('firebase');
+// var cors = require ('cors');
 
 var app = express();
 
