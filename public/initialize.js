@@ -24,9 +24,9 @@ function getStations (position) {
 	console.log('getting stations')
 	$.ajax({
 		type: "get",
-		dataType: 'jsonp',
+		// dataType: 'jsonp',
 		url: "http://www.divvybikes.com/stations/json/"
-	}).done(function(a,b,c) {
+	}).done(function(data,error,xhr) {
 		debugger;
 	})
 

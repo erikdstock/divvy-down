@@ -10,15 +10,16 @@ var DivvyDownerApp = {
 
 	updateStations: function (callback) {
 		console.log('getting stations');
-		$.ajax({
-			type: "post",
-			dataType: 'jsonp',
-			url: this.stationsResource
-		})
-		.done(callback)
-		.error(function(error,b,c){console.log(error, b, c)});
+		// $.ajax({
+		// 	type: "get",
+		// 	url: this.stationsResource
+		// })
+		// .done(callback)
+		// .error(function(error,b,c){console.log(error, b, c)});
+		$.get(this.firebaseURL).done(callback);
+})
 	},
-	clobberStations: function (data) {
+	clobberStations: function (data, error, xhr) {
 		debugger;
 		this.ref.set({
 			updatedAt: null, // (the time)
@@ -32,7 +33,7 @@ var DivvyDownerApp = {
 		// currentStations = ref.get('stations');
 		// TODO: if current stations most recent update is more than 3-5 min old, update stations
 		this.updateStations(this.clobberStations);
-		debugger;
+		// debugger;
 
 	},
 	logError: function (error) {console.log(error);}, 
