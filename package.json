@@ -1,28 +1,18 @@
 {
   "name": "divvy-downer",
-  "version": "0.0.1",
-  "description": "Divvy Station Down Tracker",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/erikdstock/divvy-downer.git"
-  },
-  "keywords": [
-    "divvy",
-    "reporting",
-    "bicycle",
-    "transportation"
-  ],
-  "author": "Erik Stockmeier",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/erikdstock/divvy-downer/issues"
-  },
-  "homepage": "https://github.com/erikdstock/divvy-downer#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "firebase": "^2.3.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   }
 }
