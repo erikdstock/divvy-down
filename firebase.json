@@ -1,0 +1,9 @@
+{
+  "firebase": "divvy-downer",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
