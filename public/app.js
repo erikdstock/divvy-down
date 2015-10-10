@@ -16,8 +16,7 @@ var DivvyDownerApp = {
 		// })
 		// .done(callback)
 		// .error(function(error,b,c){console.log(error, b, c)});
-		$.get(this.firebaseURL).done(callback);
-})
+		$.get(this.stationsResource).done(callback);
 	},
 	clobberStations: function (data, error, xhr) {
 		debugger;
