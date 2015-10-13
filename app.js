@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var request = require ('request');
+var DivvyApi = require('./public/javascripts/divvy_api.js')
 var Firebase = require('firebase');
 // var cors = require ('cors');
 
