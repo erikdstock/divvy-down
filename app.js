@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var stations = require('./routes/stations');
 
 var request = require ('request');
 var DivvyApi = require('./public/javascripts/divvy_api.js')
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/stations', stations);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
