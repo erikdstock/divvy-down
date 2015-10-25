@@ -6,12 +6,14 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
+  <nav>
+    <h1>DivvyDowner</h1>
+  </nav>
+
 	<div class='container'>
-		<ul id='station-list'></ul>
-		<% for(var i=0, len = stations.length; i<len; i++) {%>
-   			<li><%= supplies[i] %></li>
-		<% } %>
+    <h2>Nearby Stations</h2>
+    <div class='list'>
+  		<ul id='station-list'></ul>
 	</div>
   </body>
 </html>
