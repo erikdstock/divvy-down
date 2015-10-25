@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> Demo</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <nav>
+    <h1>DivvyDowner</h1>
+  </nav>
+
+	<div class='container'>
+    <div class='list'>
+    <h2>All Stations</h2>
+  		<ul id='station-list'></ul>
+      <% return stations %>
+	   	<%# for(var i=0, len = stations.stationBeanList.length; i<len; i++) {%>
+   			<li><%#= //stations.stationBeanList[i].stationName %></li>
+	   	<%# //} %>
+	</div>
+  </body>
+</html>
