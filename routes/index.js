@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-// var DivvyConnectrix = require('../core/divvy_connectrix');
-// var divvyConnectrix = new DivvyConnectrix();
 var request = require('request');
 
 

@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var DivvyConnectrix = require('../core/divvy_connectrix');
-var divvyConnectrix = new DivvyConnectrix();
+var DivvyService = require('../core/divvy_service');
+var divvyService = new DivvyService();
 var request = require('request');
 
 /* GET stations listing. */
 router.get('/', function(req, res, next) {
 	var stations;
-	stations = divvyConnectrix.getAllStations();
+	stations = divvyService.getAllStations();
     res.render('stations', {
     	title: 'DivvyDowner - All Stations', 
     	stations: (typeof(stations) !== 'undefined' ? stations : []) 

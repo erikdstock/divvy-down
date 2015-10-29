@@ -10,7 +10,6 @@ var users = require('./routes/users');
 var stations = require('./routes/stations');
 
 var request = require ('request');
-var DivvyConnectrix = require('./core/divvy_connectrix');
 var Firebase = require('firebase');
 // var cors = require ('cors');
 
